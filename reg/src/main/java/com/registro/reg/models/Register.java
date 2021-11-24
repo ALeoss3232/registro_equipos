@@ -7,8 +7,8 @@ import java.util.Date;
 public class Register {
     @Id
     private String user;
-    private int eq_id;
-    private String eq_type;
+    private int eqid;
+    private String eqtype;
     private String model;
     private String numSeries;
     private String numProd;
@@ -35,10 +35,10 @@ public class Register {
     private String other;
     private Date lastChange;
 
-    public Register(String user, int eq_id, Date lastChange, String eq_type, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
+    public Register(String user, int eqid, Date lastChange, String eqtype, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
         this.user = user;
-        this.eq_id = eq_id;
-        this.eq_type = eq_type;
+        this.eqid = eqid;
+        this.eqtype = eqtype;
         this.model = model;
         this.numSeries = numSeries;
         this.numProd = numProd;
@@ -74,12 +74,12 @@ public class Register {
         this.user = user;
     }
 
-    public int getEq_id() {
-        return eq_id;
+    public int getEqid() {
+        return eqid;
     }
 
-    public void setEq_id(int eq_id) {
-        this.eq_id = eq_id;
+    public void setEqid(int eqid) {
+        this.eqid = eqid;
     }
 
     public Date getLastChange() {
@@ -90,12 +90,12 @@ public class Register {
         this.lastChange = lastChange;
     }
 
-    public String getEq_type() {
-        return eq_type;
+    public String getEqtype() {
+        return eqtype;
     }
 
-    public void setEq_type(String eq_type) {
-        this.eq_type = eq_type;
+    public void setEqtype(String eqtype) {
+        this.eqtype = eqtype;
     }
 
     public String getModel() {

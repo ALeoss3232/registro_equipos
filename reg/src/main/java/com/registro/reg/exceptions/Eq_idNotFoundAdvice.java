@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ControllerAdvice
 @ResponseBody
-public class UserNotFoundAdvice {
+public class Eq_idNotFoundAdvice {
+
     @ResponseBody
-    @ExceptionHandler(UserNotFoundException.class)
+    @ExceptionHandler(Eq_idNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    String EntityNotFoundAdvice(UserNotFoundException ex){
+    String EntityNotFoundAdvise(Eq_idNotFoundException ex){
         return ex.getMessage();
     }
 }
