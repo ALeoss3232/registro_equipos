@@ -7,7 +7,6 @@ import java.util.Date;
 public class Register {
     @Id
     private String user;
-    private int eqid;
     private String eqtype;
     private String model;
     private String numSeries;
@@ -35,9 +34,10 @@ public class Register {
     private String other;
     private Date lastChange;
 
+
+
     public Register(String user, int eqid, Date lastChange, String eqtype, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
         this.user = user;
-        this.eqid = eqid;
         this.eqtype = eqtype;
         this.model = model;
         this.numSeries = numSeries;
@@ -72,14 +72,6 @@ public class Register {
 
     public void setUser(String user) {
         this.user = user;
-    }
-
-    public int getEqid() {
-        return eqid;
-    }
-
-    public void setEqid(int eqid) {
-        this.eqid = eqid;
     }
 
     public Date getLastChange() {
