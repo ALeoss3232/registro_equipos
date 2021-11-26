@@ -26,7 +26,7 @@ public class RegisterController {
 
     @GetMapping("/register/{eqid}")
     Register getRegister(@PathVariable String eqid) {
-        return registerRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro una cuenta con el username: " + eqid));
+        return registerRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro el equipo: " + eqid));
     }
 
     @PostMapping("/register")
@@ -36,7 +36,7 @@ public class RegisterController {
 
     @GetMapping("/usuarios/{eqid}")
     Usuarios getUsuarios(@PathVariable String eqid) {
-        return usuarioRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro una cuenta con el username: " + eqid));
+        return usuarioRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro el equipo: " + eqid));
     }
 
     @PostMapping("/usuarios")
