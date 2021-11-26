@@ -36,8 +36,9 @@ public class Register {
 
 
 
-    public Register(String user, int eqid, Date lastChange, String eqtype, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
+    public Register(String user, Date lastChange, String eqtype, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
         this.user = user;
+
         this.eqtype = eqtype;
         this.model = model;
         this.numSeries = numSeries;
