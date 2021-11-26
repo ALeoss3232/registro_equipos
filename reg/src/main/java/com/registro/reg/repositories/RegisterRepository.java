@@ -5,6 +5,6 @@ import java.util.List;
 
 
 public interface RegisterRepository extends MongoRepository <Register, String> {
-    List<Register> findByuser (String user);
+    List<Register> findByeqid (String eqid);
 
 }

@@ -1,9 +1,8 @@
 package com.registro.reg.controllers;
 
 
-import com.registro.reg.exceptions.UserNotFoundException;
+import com.registro.reg.exceptions.EqidNotFoundException;
 import com.registro.reg.models.Register;
-
 import com.registro.reg.repositories.RegisterRepository;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,14 +20,14 @@ public class RegisterController {
 
 
 
-    @GetMapping("/register/{user}")
-    Register getRegister(@PathVariable String user) {
-        return registerRepository.findById(user).orElseThrow(() -> new UserNotFoundException("No se encontro una cuenta con el username: " + user));
+    @GetMapping("/register/{eqid}")
+    Register getRegister(@PathVariable String eqid) {
+        return registerRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro una cuenta con el username: " + eqid));
     }
 
     @PostMapping("/register")
-    Register newRegister(@RequestBody Register user){
-        return registerRepository.save(user);
+    Register newRegister(@RequestBody Register eqid){
+        return registerRepository.save(eqid);
     }
 
 

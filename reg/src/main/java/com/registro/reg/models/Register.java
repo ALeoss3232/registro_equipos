@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class Register {
     @Id
-    private String user;
+    private String eqid;
     private String eqtype;
     private String model;
     private String numSeries;
@@ -36,9 +36,8 @@ public class Register {
 
 
 
-    public Register(String user, Date lastChange, String eqtype, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
-        this.user = user;
-
+    public Register(String eqid, Date lastChange, String eqtype, String model, String numSeries, String numProd, String procMarc, String procModel, String procVel, String ram, String discoType, String discoCapacity, Boolean tGraphicalInd, String tGraphicMarc, int screenSize, Boolean USB, Boolean HDMI, Boolean sAudio, Boolean eAudio, Boolean bluetooth, Boolean wifi, Boolean ethernet, Boolean webcam, Boolean mouse, Boolean keyboard, Boolean unityCD, String other) {
+        this.eqid = eqid;
         this.eqtype = eqtype;
         this.model = model;
         this.numSeries = numSeries;
@@ -67,12 +66,12 @@ public class Register {
         this.lastChange = lastChange;
     }
 
-    public String getUser() {
-        return user;
+    public String getEqid() {
+        return eqid;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setEqid(String eqid) {
+        this.eqid = eqid;
     }
 
     public Date getLastChange() {
