@@ -2,7 +2,9 @@ package com.registro.reg.models;
 
 import org.springframework.data.annotation.Id;
 
-public class Software{
+import java.util.Date;
+
+public class Software {
     @Id
     private String Edition;
     private Boolean Typesystem;
@@ -16,10 +18,10 @@ public class Software{
     private String licother2;
     private String other3;
     private String licother3;
+    private String notes;
 
 
-
-    public Software (String Edition,Boolean Typesystem,String Manufantivirus,Boolean Licenantivirus,String LicOfic,String LibOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3 ){
+    public Software (String Edition,Boolean Typesystem,String Manufantivirus,Boolean Licenantivirus,String LicOfic,String LibOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3, String notes ){
         this.Edition =Edition;
         this.Typesystem =Typesystem;
         this.Manufantivirus=Manufantivirus;
@@ -32,6 +34,7 @@ public class Software{
         this.licother2=licother2;
         this.other3=other3;
         this.licother3=licother3;
+        this.notes=notes;
 
 
     }
@@ -128,6 +131,13 @@ public class Software{
         this.licother3 = licother3;
     }
 
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
 
 
 }

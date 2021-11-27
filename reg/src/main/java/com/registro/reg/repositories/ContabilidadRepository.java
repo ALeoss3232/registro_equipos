@@ -2,7 +2,6 @@ package com.registro.reg.repositories;
 
 import com.registro.reg.models.Contabilidad;
 import org.springframework.data.mongodb.repository.MongoRepository;
-
 import java.util.List;
 
 

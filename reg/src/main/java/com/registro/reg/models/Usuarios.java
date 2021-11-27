@@ -2,7 +2,7 @@ package com.registro.reg.models;
 
 import org.springframework.data.annotation.Id;
 
-public class Usuarios {
+public class Usuarios{
     @Id
     private String eqid;
     private String user1;
