@@ -2,9 +2,7 @@ package com.registro.reg.models;
 
 import org.springframework.data.annotation.Id;
 
-import java.util.Date;
-
-public class Hardware {
+public class Software{
     @Id
     private String Edition;
     private Boolean Typesystem;
@@ -18,10 +16,10 @@ public class Hardware {
     private String licother2;
     private String other3;
     private String licother3;
-    private String notes;
 
 
-    public Hardware (String Edition,Boolean Typesystem,String Manufantivirus,Boolean Licenantivirus,String LicOfic,String LibOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3 ){
+
+    public Software (String Edition,Boolean Typesystem,String Manufantivirus,Boolean Licenantivirus,String LicOfic,String LibOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3 ){
         this.Edition =Edition;
         this.Typesystem =Typesystem;
         this.Manufantivirus=Manufantivirus;
@@ -90,7 +88,45 @@ public class Hardware {
         this.other1 = other1;
     }
 
+    public String getLicother1() {
+        return licother1;
+    }
 
+    public void setLicother1(String licother1) {
+        this.licother1 = licother1;
+    }
+
+    public String getother2() {
+        return other2;
+    }
+
+    public void setother2(String other2) {
+        this.other2 = other2;
+    }
+
+    public String getLicother2() {
+        return licother2;
+    }
+
+    public void setLicother2(String licother2) {
+        this.licother2 = licother2;
+    }
+
+    public String getother3() {
+        return other3;
+    }
+
+    public void setother3(String other3) {
+        this.other3 = other3;
+    }
+
+    public String getLicother3() {
+        return licother3;
+    }
+
+    public void setLicother3(String licother3) {
+        this.licother3 = licother3;
+    }
 
 
 
