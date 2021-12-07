@@ -1,6 +1,6 @@
 <template>
-
     <div class="creausr">
+
 		<div class="container_creausr">
 			<form v-on:submit.prevent="processCreausr">
 				<table style="width: 100%">
@@ -8,12 +8,12 @@
 					<td></td>
 					<td>
 
-						<table align="center" style="width: 400px" class="auto-style7">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
-								<td class="auto-style1">
-							<img alt="" height="120" src="../assets/images/Logo01.png" width="120" /></td>
-								<td class="auto-style1">
-							<img alt="" height="149" src="../assets/images/03Crear02.png" width="120" class="auto-style9" /></td>
+								<td>
+							<img height="120" src="../assets/images/Logo01.png" width="120" /></td>
+								<td>
+							<img class="icono_titulo" width="120" src="../assets/images/03Crear02.png" /></td>
 								</tr>
 						</table>
 
@@ -24,14 +24,14 @@
 					<td>&nbsp;</td>
 					<td>
 
-						<table align="center" class="auto-style7" style="width: 400px">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
-								<td class="auto-style1">
-							<img alt="" class="auto-style8" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
+								<td>
+							<img class="titulo_05a" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
 								</tr>
 								<tr>
-								<td class="auto-style1">
-							<img alt="" class="auto-style2" height="30" src="../assets/images/04TituloCR.png" width="147" /></td>
+								<td>
+							<img height="30" src="../assets/images/04TituloCR.png" width="147" /></td>
 								</tr>
 						</table>
 
@@ -42,17 +42,17 @@
 					<td>&nbsp;</td>
 					<td>
 
-						<table align="center" style="width: 400px" class="auto-style7">
+						<table align="center" class="tabla_blanca" style="width: 400px" >
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-							<img alt="" class="auto-style3" height="100" src="../assets/images/04Usr02.png" width="100" /></td>
+							<img class="icono_seccion" width="100" src="../assets/images/04Usr02.png" /></td>
 								<td>&nbsp;</td>
 								</tr>
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-							<img alt="" height="15" src="../assets/images/04Usr.png" width="109" /></td>
+							<img height="15" src="../assets/images/04Usr.png" width="109" /></td>
 								<td>&nbsp;</td>
 								</tr>
 						</table>
@@ -64,67 +64,65 @@
 					<td></td>
 					<td>
 
-						<table align="center" style="width: 500px" class="auto-style10">
+						<table align="center" class="tabla_blanca" style="width: 500px" >
 								<tr>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
-							<td class="auto-style5" style="width: 250px"><strong>ID de Equipo</strong></td>
-							<td class="auto-style5" style="width: 250px"><strong>XXXXXXXXXX</strong></td>
+							<td class="texto_general" width="250px"><strong>ID de Equipo</strong></td>
+							<td class="texto_general" width="250px"><strong>XXXXXXXXXX</strong></td>
 								</tr>
 								<tr>
-							<td class="auto-style5" style="width: 250px">Nombre</td>
-							<td class="auto-style5" style="width: 250px">XXXXXXXXX</td>
+							<td class="texto_general" width="250px">Nombre</td>
+							<td class="texto_general" width="250px">XXXXXXXXX</td>
 								</tr>
 								<tr>
-							<td class="auto-style5" style="width: 250px">Ubicación</td>
-							<td class="auto-style5" style="width: 250px">XXXXXX</td>
+							<td class="texto_general" width="250px">Ubicación</td>
+							<td class="texto_general" width="250px">XXXXXX</td>
 								</tr>
 								<tr>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; HISTÓRICO</strong></td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; Usuario Actual (Principal)</strong></td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 1. Usuario</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 1. Usuario</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.usuario"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 2. Contraseña</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 2. Contraseña</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.contrasena"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 3. Nombres y Apellidos</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 3. Nombres y Apellidos</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.nombresApellidos"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 4. Fecha de asignación</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 4. Fecha de asignación</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="date" v-model="equipousr.fechaAsignacion"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 5. Tipo de Usuario</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 5. Tipo de Usuario</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equipousr.tipoUsuario">							
 								<option value="Administrador">Administrador</option>
 								<option value="Invitado">Invitado</option>
@@ -132,43 +130,42 @@
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 								
-								<td class="auto-style4" style="width: 250px">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; Usuario Actual (Alterno)</strong></td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 6. Usuario</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 6. Usuario</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.usuario2"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 7. Contraseña</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 7. Contraseña</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.contrasena2"></td>
 								</tr>
 								<tr>
 							
-							<td class="auto-style4" style="width: 250px">&nbsp; 8. Nombres y Apellidos</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 8. Nombres y Apellidos</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.nombresApellidos2"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 9. Fecha de asignación</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 9. Fecha de asignación</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="date" v-model="equipousr.fechaAsignacion2"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 10. Tipo de Usuario</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 10. Tipo de Usuario</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equipousr.tipoUsuario2">							
 								<option value="Administrador">Administrador</option>
 								<option value="Invitado">Invitado</option>
@@ -176,43 +173,42 @@
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="height: 25px; width: 250px;">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; Penúltimo Usuario</strong></td>
-								<td class="auto-style4" style="height: 25px; width: 250px;"></td>
+								<td></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 11. Usuario</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 11. Usuario</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.usuario3"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 12. Contraseña</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 12. Contraseña</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.contrasena3"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 13. Nombres y Apellidos</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 13. Nombres y Apellidos</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipousr.nombresApellidos3"></td>
 								</tr>
 								<tr>
 							
-							<td class="auto-style4" style="width: 250px">&nbsp; 14. Fecha de asignación</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 14. Fecha de asignación</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="date" v-model="equipousr.fechaAsignacion3"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 15. Tipo de Usuario</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 15. Tipo de Usuario</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equipousr.tipoUsuario3">							
 								<option value="Administrador">Administrador</option>
 								<option value="Invitado">Invitado</option>
@@ -220,23 +216,22 @@
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
-								<td class="auto-style5" style="width: 250px">
+								<td>
 
 							<button type="submit">
-							<div id="img1" class="shadow" src="../assets/images/04Guardar01.png"></div></button></td>
-								<td class="auto-style5" style="width: 250px">
+							<div id="img1_08" class="shadow" src="../assets/images/04Guardar01.png"></div></button></td>
+								<td>
 							
 							<button onclick="/crear">
 							<router-link to="/crear">
-							<div id="img2" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
+							<div id="img2_08" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
 								</tr>
 								<tr>
 								
-								<td class="auto-style5" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 						</table>
 
@@ -247,11 +242,11 @@
 				</table>
 
 			</form>
-		</div>
+		</div>		
     </div>
 </template>
 
-
+ 
 <script>
 
 import gql from "graphql-tag";
@@ -318,42 +313,40 @@ export default {
 
 
 <style>
-	.auto-style1 {
-		text-align: center;
-	}
-	.auto-style2 {
-		margin-bottom: 10px;
-	}
-	.auto-style3 {
-		border-width: 0px;
-		margin-top: 10px;
-	}
-	.auto-style4 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		text-align: left;
-	}
-	.auto-style5 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		text-align: center;
-	}
-	.auto-style6 {
-		border-width: 0px;
-	}
-	.auto-style7 {
+	
+	.tabla_blanca {
 		border: 3px solid #808080;
 		background-color: #FFFFFF;
 	}
-	.auto-style8 {
+	
+	.icono_titulo {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.titulo_05a {
 		margin-bottom: 10px;
 		margin-top: 10px;
+		border-width: 0px;
 	}
-	.auto-style9 {
-		margin-bottom: 5px;
-		margin-top: 5px;
+
+	.icono_seccion {
+		margin-top: 10px;
 	}
-	.auto-style10 {
-		border: 2px solid #808080;
-		background-color: #FFFFFF;
+
+	.texto_general {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: center;
+	}
+
+	.texto_formulario {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: left;
+	}
+
+	.campo_formulario {
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: left;
 	}
 
     .creausr button {
@@ -366,7 +359,7 @@ export default {
         background: none;
     }
 
-	#img1 {
+	#img1_08 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -374,11 +367,11 @@ export default {
 		background-image:url("../assets/images/04Guardar01.png");
 	}
 
-	#img1:hover {
+	#img1_08:hover {
 		background-image:url("../assets/images/04Guardar02.png");
 	}
 
-	#img2 {
+	#img2_08 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -386,7 +379,8 @@ export default {
 		background-image:url("../assets/images/00Cancelar01.png");
 	}
 
-	#img2:hover {
+	#img2_08:hover {
 		background-image:url("../assets/images/00Cancelar02.png");
 	}
+
 </style>

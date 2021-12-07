@@ -6,12 +6,12 @@
 			<td>&nbsp;</td>
 			<td>
 
-				<table align="center" class="auto-style7" style="width: 400px">
+				<table align="center" class="tabla_blanca" style="width: 400px">
 						<tr>
-						<td class="auto-style1">
-					<img alt="" height="120" src="../assets/images/Logo01.png" width="120" /></td>
-						<td class="auto-style1">
-					<img alt="" height="151" src="../assets/images/03Consulta02.png" width="120" class="auto-style9" /></td>
+						<td>
+					<img height="120" src="../assets/images/Logo01.png" width="120" /></td>
+						<td>
+					<img class="icono_titulo" width="120" src="../assets/images/03Consulta02.png" /></td>
 						</tr>
 				</table>
 
@@ -22,14 +22,14 @@
 			<td>&nbsp;</td>
 			<td>
 
-				<table class="auto-style10" style="width: 400px">
+				<table align="center" class="tabla_blanca" style="width: 400px">
 						<tr>
-						<td class="auto-style1">
-					<img alt="" class="auto-style2" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
+						<td>
+					<img class="titulo_05a" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
 						</tr>
 						<tr>
-						<td class="auto-style1">
-					<img alt="" height="25" src="../assets/images/05TituloCS.png" width="160" class="auto-style11" /></td>
+						<td>
+					<img id="titulo_05b" height="25" src="../assets/images/05TituloCS.png" width="160"  /></td>
 						</tr>
 				</table>
 
@@ -40,38 +40,37 @@
 			<td>&nbsp;</td>
 			<td>
 
-				<table class="auto-style10" style="width: 400px">
+				<table align="center" class="tabla_blanca" style="width: 400px">
 						<tr>
-						<td class="auto-style4" style="width: 200px">&nbsp;</td>
-						<td class="auto-style3" style="width: 200px">&nbsp;</td>
+						<td>&nbsp;</td>
 						</tr>
 						<tr>
-					<td class="auto-style4" rowspan="5" style="width: 200px">&nbsp;<img alt="" height="140" src="../assets/images/05Consult02.png" width="140" /></td>
-					<td class="auto-style3" style="width: 200px">&nbsp;Por <strong>Lista de Equipos</strong>&nbsp;</td>
+					<td rowspan="5" style="width: 200px">&nbsp;<img width="140" src="../assets/images/05Consult02.png" /></td>
+					<td class="texto_general" style="width: 200px">&nbsp;Por <strong>Lista de Equipos</strong>&nbsp;</td>
 						</tr>
 						<tr>
-					<td class="auto-style4" style="height: 33px; width: 200px">&nbsp;<a href="consulta.html">Listado de Equipos</a></td>
+					<td class="texto_general" style="height: 33px; width: 200px">&nbsp;<a href="consulta.html">Listado de Equipos</a></td>
 						</tr>
 						<tr>
-						<td class="auto-style3" style="width: 200px">&nbsp;</td>
+						<td>&nbsp;</td>
 						</tr>
 						<tr>
-					<td class="auto-style3" style="width: 200px">&nbsp;&nbsp;Por <strong>ID de Equipo</strong></td>
+					<td class="texto_general" style="width: 200px">&nbsp;&nbsp;Por <strong>ID de Equipo</strong></td>
 						</tr>
 						<tr>
-						<td class="auto-style4" style="width: 200px">&nbsp;<input name="Text1" type="text" /></td>
+					<td style="width: 200px">&nbsp;<input name="Text1" type="text" /></td>
 						</tr>
 						<tr>
-						<td class="auto-style3" style="width: 200px">&nbsp;</td>
-						<td class="auto-style3" style="width: 200px">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 						</tr>
 						<tr>
-						<td class="auto-style4" style="width: 200px">
+						<td>
 					<router-link to="/main">
-					<div id="img1" class="shadow" src="../assets/images/05Buscar01.png"></div></router-link>&nbsp;</td>
-						<td class="auto-style4" style="width: 200px">
+					<div id="img1_05" class="shadow" src="../assets/images/05Buscar01.png"></div></router-link>&nbsp;</td>
+						<td>
 					<router-link to="/main">
-					<div id="img2" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link>&nbsp;</td>
+					<div id="img2_05" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link>&nbsp;</td>
 						</tr>
 						<tr>
 						</tr>
@@ -86,49 +85,35 @@
 </template>
 
 
+<script>
+
+</script>
+
 
 <style>
-	.auto-style1 {
-		text-align: center;
-	}
-	.auto-style2 {
-		margin-bottom: 10px;
-		margin-top: 10px;
-	}
-	.auto-style3 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		border: 0px solid #808080;
-	}
-	.auto-style4 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		text-align: center;
-	}
-	.auto-style5 {
-		border-width: 0px;
-	}
-	.auto-style7 {
-		margin-left: auto;
-		margin-right: auto;
+
+	.tabla_blanca {
 		border: 3px solid #808080;
-		border-collapse: collapse;
 		background-color: #FFFFFF;
 	}
-	.auto-style9 {
+
+	.icono_titulo {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
-	.auto-style10 {
-		margin-left: auto;
-		margin-right: auto;
-		border: 3px solid #808080;
-		background-color: #FFFFFF;
-	}
-	.auto-style11 {
+
+	.titulo_05a {
 		margin-bottom: 10px;
+		margin-top: 10px;
+		border-width: 0px;
 	}
 
+	.texto_general {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: center;
+	}
 
-	#img1 {
+	#img1_05 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -136,11 +121,11 @@
 		background-image:url("../assets/images/05Buscar01.png");
 	}
 
-	#img1:hover {
+	#img1_05:hover {
 		background-image:url("../assets/images/05Buscar02.png");
 	}
 
-	#img2 {
+	#img2_05 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -148,7 +133,7 @@
 		background-image:url("../assets/images/00Cancelar01.png");
 	}
 
-	#img2:hover {
+	#img2_05:hover {
 		background-image:url("../assets/images/00Cancelar02.png");
 	}
 
