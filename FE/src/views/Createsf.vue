@@ -1,6 +1,6 @@
 <template>
-
     <div class="crearsf">
+
       	<div class="container_crearsf">
 		  	<form v-on:submit.prevent="processCreatesf">
 				<table style="width: 100%">
@@ -8,12 +8,12 @@
 					<td></td>
 					<td>
 
-						<table align="center" style="width: 400px" class="auto-style11">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
-								<td class="auto-style1">
-							<img alt="" height="120" src="../assets/images/Logo01.png" width="120" /></td>
-								<td class="auto-style1">
-							<img alt="" height="149" src="../assets/images/03Crear02.png" width="120" class="auto-style7" /></td>
+								<td>
+							<img height="120" src="../assets/images/Logo01.png" width="120" /></td>
+								<td>
+							<img class="icono_titulo" width="120" src="../assets/images/03Crear02.png" /></td>
 								</tr>
 						</table>
 
@@ -24,14 +24,14 @@
 					<td>&nbsp;</td>
 					<td>
 
-						<table align="center" class="auto-style11" style="width: 400px">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
-								<td class="auto-style1">
-							<img alt="" class="auto-style9" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
+								<td>
+							<img class="titulo_05a" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
 								</tr>
 								<tr>
-								<td class="auto-style1">
-							<img alt="" class="auto-style2" height="30" src="../assets/images/04TituloCR.png" width="147" /></td>
+								<td>
+							<img height="30" src="../assets/images/04TituloCR.png" width="147" /></td>
 								</tr>
 						</table>
 
@@ -42,17 +42,17 @@
 					<td>&nbsp;</td>
 					<td>
 
-						<table align="center" style="width: 400px" class="auto-style11">
+						<table align="center" class="tabla_blanca" style="width: 400px" >
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-							<img alt="" class="auto-style3" height="100" src="../assets/images/04Sfw02.png" width="100" /></td>
+							<img class="icono_seccion" width="100" src="../assets/images/04Sfw02.png" /></td>
 								<td>&nbsp;</td>
 								</tr>
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-							<img alt="" height="15" src="../assets/images/04Sfw.png" width="109" />&nbsp;</td>
+							<img height="15" src="../assets/images/04Sfw.png" width="109" />&nbsp;</td>
 								<td>&nbsp;</td>
 								</tr>
 						</table>
@@ -64,37 +64,36 @@
 					<td></td>
 					<td>
 
-						<table align="center" style="width: 500px" class="auto-style10">
+						<table align="center" class="tabla_blanca" style="width: 500px" >
 								<tr>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
-							<td class="auto-style5" style="width: 250px"><strong>ID de Equipo</strong></td>
-							<td class="auto-style5" style="width: 250px"><strong>XXXXXXXXXX</strong></td>
+							<td class="texto_general" width="250px"><strong>ID de Equipo</strong></td>
+							<td class="texto_general" width="250px"><strong>XXXXXXXXXX</strong></td>
 								</tr>
 								<tr>
-							<td class="auto-style5" style="width: 250px">Nombre</td>
-							<td class="auto-style5" style="width: 250px">XXXXXXXXX</td>
+							<td class="texto_general" width="250px">Nombre</td>
+							<td class="texto_general" width="250px">XXXXXXXXX</td>
 								</tr>
 								<tr>
-							<td class="auto-style5" style="width: 250px">Ubicación</td>
-							<td class="auto-style5" style="width: 250px">XXXXXX</td>
+							<td class="texto_general" width="250px">Ubicación</td>
+							<td class="texto_general" width="250px">XXXXXX</td>
 								</tr>
 								<tr>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; Sistema Operativo</strong></td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 1. Edición</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 1. Edición</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.soEdicion">
 								<option value="Windows 11">Windows 11</option>
 								<option value="Windows 10">Windows 10</option>
@@ -127,8 +126,8 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 2. Tipo de Sistema</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 2. Tipo de Sistema</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.soTipo">
 								<option value="64 bits">64 bits</option>
 								<option value="32 bits">32 bits</option>
@@ -136,19 +135,18 @@
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; Antivirus</strong></td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 3. Marca</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 3. Marca</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.avirusMarca">
 								<option value="Avast">Avast</option>
 								<option value="Avira">Avira</option>
@@ -167,8 +165,8 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 4. Licencia</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 4. Licencia</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.avirusLicencia">						
 								<option value="Si">Si</option>
 								<option value="No">No</option>
@@ -176,19 +174,18 @@
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 								
-								<td class="auto-style4" style="width: 250px">
+								<td class="texto_formulario" width="250px">
 							<strong>&nbsp; Software Instalado</strong></td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 5. Ofimática (Licencia)</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 5. Ofimática (Licencia)</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.ofiLicencia">
 								<option value="No">No</option>
 								<option value="Microsoft Office 365">Microsoft Office 365</option>
@@ -204,8 +201,8 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 6. Ofimática (Libre)</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 6. Ofimática (Libre)</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.ofiLibre">							
 								<option value="No">No</option>
 								<option value="OpenOffice">OpenOffice</option>
@@ -215,14 +212,14 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 7. Otro 1</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 7. Otro 1</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equiposf.otro1"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="height: 25px; width: 250px">&nbsp; 8. Otro 1 (Licencia)</td>
-								<td class="auto-style4" style="height: 25px; width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 8. Otro 1 (Licencia)</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.otro1Licencia">						
 								<option value="Si">Si</option>
 								<option value="No">No</option>
@@ -230,14 +227,14 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 9. Otro 2</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 9. Otro 2</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equiposf.otro2"></td>
 								</tr>
 								<tr>
 								
-							<td class="auto-style4" style="width: 250px">&nbsp; 10. Otro 2 (Licencia)</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 10. Otro 2 (Licencia)</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.otro2Licencia">							
 								<option value="Si">Si</option>
 								<option value="No">No</option>
@@ -245,14 +242,14 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 11. Otro 3</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 11. Otro 3</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equiposf.otro3"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 12. Otro 3 (Licencia)</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 12. Otro 3 (Licencia)</td>
+								<td class="campo_formulario" style="width: 250px">
 							<select v-model="equiposf.otro3Licencia">							
 								<option value="Si">Si</option>
 								<option value="No">No</option>
@@ -260,29 +257,28 @@
 								</tr>
 								<tr>
 
-							<td class="auto-style4" style="width: 250px">&nbsp; 13. Notas</td>
-								<td class="auto-style4" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 13. Notas</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equiposf.notas"></td>
 								</tr>
 								<tr>
 
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
-								<td class="auto-style5" style="width: 250px">
+								<td>
 
 							<button type="submit">
-							<div id="img1" class="shadow" src="../assets/images/04Guardar01.png"></div></button></td>
-								<td class="auto-style5" style="width: 250px">
+							<div id="img1_08" class="shadow" src="../assets/images/04Guardar01.png"></div></button></td>
+								<td>
 							
 							<button onclick="/crear">
 							<router-link to="/crear">
-							<div id="img2" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
+							<div id="img2_08" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
 								</tr>
 								<tr>
 
-								<td class="auto-style5" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 						</table>
 
@@ -297,7 +293,7 @@
     </div>
 </template>
 
-
+ 
 <script>
 
 import gql from "graphql-tag";
@@ -362,44 +358,42 @@ export default {
 
 
 <style>
-.auto-style1 {
-    border-width: 0px;
-	text-align: center;
-}
-.auto-style2 {
-	margin-bottom: 10px;
-}
-.auto-style3 {
-	border-width: 0px;
-	margin-top: 10px;
-}
-.auto-style4 {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-}
-.auto-style5 {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	text-align: center;
-}
-.auto-style6 {
-	border-width: 0px;
-}
-.auto-style7 {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.auto-style9 {
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-.auto-style10 {
-	border: 2px solid #808080;
-	background-color: #FFFFFF;
-}
-.auto-style11 {
-	border: 3px solid #808080;
-	background-color: #FFFFFF;
-}
+
+	.tabla_blanca {
+		border: 3px solid #808080;
+		background-color: #FFFFFF;
+	}
+	
+	.icono_titulo {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.titulo_05a {
+		margin-bottom: 10px;
+		margin-top: 10px;
+		border-width: 0px;
+	}
+
+	.icono_seccion {
+		margin-top: 10px;
+	}
+
+	.texto_general {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: center;
+	}
+
+	.texto_formulario {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: left;
+	}
+
+	.campo_formulario {
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: left;
+	}
+
 
     .crearsf button {
     	border-width: 0px;
@@ -411,7 +405,7 @@ export default {
         background: none;
     }
 
-	#img1 {
+	#img1_08 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -423,7 +417,7 @@ export default {
 		background-image:url("../assets/images/04Guardar02.png");
 	}
 
-	#img2 {
+	#img2_08 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -431,7 +425,8 @@ export default {
 		background-image:url("../assets/images/00Cancelar01.png");
 	}
 
-	#img2:hover {
+	#img2_08:hover {
 		background-image:url("../assets/images/00Cancelar02.png");
 	}
+
 </style>

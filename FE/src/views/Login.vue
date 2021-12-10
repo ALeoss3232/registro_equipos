@@ -3,73 +3,78 @@
   	<div class="logIn_user">
 	  	<div class="container_logIn_user">
 			<form v-on:submit.prevent="processLogInUser" >
-					<table style="width: 100%">
-						<tr>
-						<td class="auto-style1" style="height: 282px">
-						&nbsp;</td>
-					<td class="auto-style1" style="height: 282px">
-					<table align="center" class="auto-style8" style="width: 300px">
-						<tr>
-						<td>
-					<router-link to="/">
-					<img alt="" height="300" src="../assets/images/Logo01.png" width="300" class="auto-style7" /></router-link></td>
-						</tr>
-						<tr>
-						<td>
-					<img alt="" height="23" src="../assets/images/01TituloIS.png" width="176" /></td>
-						</tr>
-						<tr>
-						<td>&nbsp;</td>
-						</tr>
-						<tr>
-						<td>
-					<img alt="" height="15" src="../assets/images/01Usuario.png" width="75" /></td>
-						</tr>
-						<tr>
-						<td>
-					<input type="text" v-model="user.username"></td>
-						</tr>
-						<tr>
-						<td>&nbsp;</td>
-						</tr>
-						<tr>
-						<td>
-					<img alt="" class="auto-style2" height="15" src="../assets/images/01Contrasena.png" width="112" /></td>
-						</tr>
-						<tr>
-						<td>
-					<input type="password" v-model="user.password"></td>
-						</tr>
-						<tr>
-						</tr>
-						<tr>
-						<td>
-					<button type="submit">
-						<div id="img1" class="shadow" src="../assets/images/00Iniciosesion01.png"></div></button></td>
-						</tr>
-						<tr>
-						<td></td>
-						</tr>
-						<tr>
-						<td>
-					<button onclick="/">
-					<router-link to="/">
-						<div id="img2" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
-						</tr>
-						<tr>
-						<td>&nbsp;</td>
-						</tr>
-					</table>
+				
+				<table style="width: 100%">
+					<tr>
+					<td>
+					&nbsp;</td>
+					<td>
+
+						<table align="center" class="tabla_blanca" style="width: 300px">
+								<tr>
+								<td>
+							<router-link to="/">
+							<img height="300" src="../assets/images/Logo01.png" width="300" /></router-link></td>
+								</tr>
+								<tr>
+								<td>
+							<img height="23" src="../assets/images/01TituloIS.png" width="176" /></td>
+								</tr>
+								<tr>
+								<td>&nbsp;</td>
+								</tr>
+								<tr>
+								<td>
+							<img height="15" src="../assets/images/01Usuario.png" width="75" /></td>
+								</tr>
+								<tr>
+								<td>
+							<input type="text" v-model="user.username"></td>
+								</tr>
+								<tr>
+								<td>&nbsp;</td>
+								</tr>
+								<tr>
+								<td>
+							<img height="15" src="../assets/images/01Contrasena.png" width="112" /></td>
+								</tr>
+								<tr>
+								<td>
+							<input type="password" v-model="user.password"></td>
+								</tr>
+								<tr>
+								</tr>
+								<tr>
+								<td>
+							<button type="submit">
+								<div id="img1_02" class="shadow" src="../assets/images/00Iniciosesion01.png"></div></button></td>
+								</tr>
+								<tr>
+								<td></td>
+								</tr>
+								<tr>
+								<td>
+							<button onclick="/">
+							<router-link to="/">
+								<div id="img2_02" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
+								</tr>
+								<tr>
+								<td>&nbsp;</td>
+								</tr>
+						</table>
+
 					</td>
-					<td class="auto-style1" style="height: 282px">
+					<td>
 					&nbsp;</td>
 					</tr>
 				</table>
+
 			</form>
     	</div>
 	</div>
 	
 </template>
+
 
 <script>
 import gql from "graphql-tag";
@@ -85,7 +90,7 @@ export default {
       },
     };
   },
-
+ 
   methods: {
     processLogInUser: async function() {
       await this.$apollo
@@ -120,27 +125,8 @@ export default {
 </script>
 
 <style>
-	.auto-style1 {
-		text-align: center;
-	}
-	.auto-style2 {
-		vertical-align: top;
-	}
-	.auto-style4 {
-		margin-top: 10px;
-		margin-bottom: 13px;
-	}
-	.auto-style5 {
-		border-width: 0px;
-		margin-top: 27px;
-	}
-	.auto-style6 {
-		margin-left: 19px;
-	}
-	.auto-style7 {
-		border-width: 0px;
-	}
-	.auto-style8 {
+
+	.tabla_blanca {
 		border: 3px solid #808080;
 		background-color: #FFFFFF;
 	}
@@ -197,8 +183,7 @@ export default {
     	margin: 10px;
 	}
 
-
-	#img1 {
+	#img1_02 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -206,11 +191,11 @@ export default {
 		background-image:url("../assets/images/00Iniciosesion01.png");
 	}
 
-	#img1:hover {
+	#img1_02:hover {
 		background-image:url("../assets/images/00Iniciosesion02.png");
 	}
 
-	#img2 {
+	#img2_02 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -218,7 +203,7 @@ export default {
 		background-image:url("../assets/images/00Cancelar01.png");
 	}
 
-	#img2:hover {
+	#img2_02:hover {
 		background-image:url("../assets/images/00Cancelar02.png");
 	}
 </style>

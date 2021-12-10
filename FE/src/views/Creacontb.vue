@@ -1,6 +1,6 @@
 <template>
-
     <div class="creacontb">
+
 		<div class="container_creacontb">
 			<form v-on:submit.prevent="processCreacontb">
 				<table style="width: 100%">
@@ -8,12 +8,12 @@
 					<td></td>
 					<td>
 
-						<table align="center" style="width: 400px" class="auto-style7">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
-								<td class="auto-style1">
-							<img alt="" height="120" src="../assets/images/Logo01.png" width="120" /></td>
-								<td class="auto-style1">
-							<img alt="" height="149" src="../assets/images/03Crear02.png" width="120" class="auto-style9" /></td>
+								<td>
+							<img height="120" src="../assets/images/Logo01.png" width="120"/></td>
+								<td>
+							<img class="icono_titulo" width="120" src="../assets/images/03Crear02.png" /></td>
 								</tr>
 						</table>
 
@@ -24,14 +24,14 @@
 					<td>&nbsp;</td>
 					<td>
 
-						<table align="center" class="auto-style7" style="width: 400px">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
-								<td class="auto-style1">
-							<img alt="" class="auto-style8" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
+								<td>
+							<img class="titulo_05a" height="23" src="../assets/images/04TituloCR01.png" width="299" /></td>
 								</tr>
 								<tr>
-								<td class="auto-style1">
-							<img alt="" class="auto-style2" height="30" src="../assets/images/04TituloCR.png" width="147" /></td>
+								<td>
+							<img height="30" src="../assets/images/04TituloCR.png" width="147" /></td>
 								</tr>
 						</table>
 
@@ -42,17 +42,17 @@
 					<td>&nbsp;</td>
 					<td>
 
-						<table align="center" style="width: 400px" class="auto-style7">
+						<table align="center" class="tabla_blanca" style="width: 400px">
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-							<img alt="" class="auto-style3" height="100" src="../assets/images/04Contb02.png" width="100" /></td>
+							<img class="icono_seccion" width="100" src="../assets/images/04Contb02.png" /></td>
 								<td>&nbsp;</td>
 								</tr>
 								<tr>
 								<td>&nbsp;</td>
 								<td>
-							<img alt="" height="15" src="../assets/images/04Contb.png" width="147" class="auto-style2" /></td>
+							<img height="15" src="../assets/images/04Contb.png" width="147" /></td>
 								<td>&nbsp;</td>
 								</tr>
 						</table>
@@ -64,88 +64,85 @@
 					<td></td>
 					<td>
 
-						<table align="center" style="width: 500px" class="auto-style10">
+						<table align="center" class="tabla_blanca" style="width: 500px" >
 								<tr>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
-							<td class="auto-style4" style="width: 250px"><strong>ID de Equipo</strong></td>
-							<td class="auto-style4" style="width: 250px"><strong>XXXXXXXXXX</strong></td>
+							<td class="texto_general" width="250px"><strong>ID de Equipo</strong></td>
+							<td class="texto_general" width="250px"><strong>XXXXXXXXXX</strong></td>
 								</tr>
 								<tr>
-							<td class="auto-style4" style="width: 250px">Nombre</td>
-							<td class="auto-style4" style="width: 250px">XXXXXXXXX</td>
+							<td class="texto_general" width="250px">Nombre</td>
+							<td class="texto_general" width="250px">XXXXXXXXX</td>
 								</tr>
 								<tr>
-							<td class="auto-style4" style="width: 250px">Ubicación</td>
-							<td class="auto-style4" style="width: 250px">XXXXXX</td>
+							<td class="texto_general" width="250px">Ubicación</td>
+							<td class="texto_general" width="250px">XXXXXX</td>
 								</tr>
 								<tr>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style6" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
 
-							<td class="auto-style6" style="width: 250px">&nbsp; 1. Código de Registro Contable</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 1. Código de Registro Contable</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipocontb.codRegCont"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style6" style="width: 250px">&nbsp; 2. Factura de Compra</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 2. Factura de Compra</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipocontb.factCompra"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style6" style="width: 250px">&nbsp; 3. Fecha de Compra</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 3. Fecha de Compra</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="date" v-model="equipocontb.fechaCompra"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style6" style="width: 250px">&nbsp; 4. Precio sin IVA</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 4. Precio sin IVA</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="number" v-model="equipocontb.precioSinIva"></td>
 								</tr>
 								<tr>
 							
-							<td class="auto-style6" style="width: 250px">&nbsp; 5. IVA</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 5. IVA</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="number" v-model="equipocontb.iva"></td>
 								</tr>
 								<tr>
 
-							<td class="auto-style6" style="width: 250px">&nbsp; 6. Establecimiento de Compra</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 6. Establecimiento de Compra</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="text" v-model="equipocontb.establCompra"></td>
 								</tr>
 								<tr>
 							
-							<td class="auto-style6" style="width: 250px">&nbsp; 7. Vencimiento garantía</td>
-								<td class="auto-style6" style="width: 250px">
+							<td class="texto_formulario" width="250px">&nbsp; 7. Vencimiento garantía</td>
+								<td class="campo_formulario" style="width: 250px">
 							<input type="date" v-model="equipocontb.vencGarant"></td>
 								</tr>
 								<tr>
 							
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
-								<td class="auto-style4" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 								<tr>
-								<td class="auto-style1" style="width: 250px">
+								<td>
 
 							<button type="submit">
-							<div id="img1" class="shadow" src="../assets/images/04Guardar01.png"></div></button></td>
-								<td class="auto-style1" style="width: 250px">
+							<div id="img1_08" class="shadow" src="../assets/images/04Guardar01.png"></div></button></td>
+								<td>
 
 							<button onclick="/crear">	
 							<router-link to="/crear">
-							<div id="img2" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
+							<div id="img2_08" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
 								</tr>
 								<tr>
 
-								<td class="auto-style1" style="width: 250px">&nbsp;</td>
+								<td>&nbsp;</td>
 								</tr>
 						</table>
 
@@ -159,7 +156,7 @@
 		</div>
 	</div>
 </template>
-
+ 
 
 <script>
 
@@ -219,44 +216,40 @@ export default {
 
 
 <style>
-	.auto-style1 {
-		text-align: center;
-	}
-	.auto-style2 {
-		margin-bottom: 10px;
-	}
-	.auto-style3 {
-		border-width: 0px;
-		margin-top: 10px;
-	}
-	.auto-style4 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		text-align: center;
-	}
-	.auto-style5 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		border-width: 0px;
-	}
-	.auto-style6 {
-		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-		text-align: left;
-	}
-	.auto-style7 {
+
+	.tabla_blanca {
 		border: 3px solid #808080;
 		background-color: #FFFFFF;
 	}
-	.auto-style8 {
-		border-width: 0px;
-		margin-bottom: 10px;
-		margin-top: 10px;
-	}
-	.auto-style9 {
+	
+	.icono_titulo {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
-	.auto-style10 {
-		border: 2px solid #808080;
-		background-color: #FFFFFF;
+
+	.titulo_05a {
+		margin-bottom: 10px;
+		margin-top: 10px;
+		border-width: 0px;
+	}
+
+	.icono_seccion {
+		margin-top: 10px;
+	}
+
+	.texto_general {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: center;
+	}
+
+	.texto_formulario {	
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: left;
+	}
+
+	.campo_formulario {
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: left;
 	}
 
     .creacontb button {
@@ -269,7 +262,7 @@ export default {
         background: none;
     }
 
-	#img1 {
+	#img1_08 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -277,11 +270,11 @@ export default {
 		background-image:url("../assets/images/04Guardar01.png");
 	}
 
-	#img1:hover {
+	#img1_08:hover {
 		background-image:url("../assets/images/04Guardar02.png");
 	}
 
-	#img2 {
+	#img2_08 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -289,7 +282,7 @@ export default {
 		background-image:url("../assets/images/00Cancelar01.png");
 	}
 
-	#img2:hover {
+	#img2_08:hover {
 		background-image:url("../assets/images/00Cancelar02.png");
 	}
 

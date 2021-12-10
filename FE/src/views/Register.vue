@@ -4,23 +4,24 @@
         <div class="container_signUp_user">
 			<form v-on:submit.prevent="processSignUp" >
 				<table style="width: 100%">
-					<tbody class="auto-style1">
+					<tbody>
 						<tr>
-						<td class="auto-style1">&nbsp;</td>
-						<td class="auto-style1">
-							<table align="center" class="auto-style10" style="width: 300px">
+						<td></td>
+						<td>
+
+							<table align="center" class="tabla_blanca" style="width: 300px">
 								<tr>
 								<td>&nbsp;
 								<router-link to="/">
-								<img alt="" height="300" src="../assets/images/Logo01.png" width="300" class="auto-style8" /></router-link></td>
+								<img id="titulo_01" height="300" src="../assets/images/Logo01.png" width="300"  /></router-link></td>
 									</tr>
 									<tr>
 									<td>
-								<img alt="" class="auto-style2" height="23" src="../assets/images/02TituloRU.png" width="229" />&nbsp;</td>
+								<img id="titulo_01a" height="23" src="../assets/images/02TituloRU.png" width="229" />&nbsp;</td>
 									</tr>
 									<tr>
 									<td>
-								<img alt="" class="auto-style9" height="20" src="../assets/images/02TUsuario.png" width="159" /></td>
+								<img class="titulo_campo" height="20" src="../assets/images/02TUsuario.png" width="159" /></td>
 									</tr>
 									<tr>
 									<td>
@@ -33,7 +34,7 @@
 									</tr>
 									<tr>
 									<td>
-								<img alt="" class="auto-style4" height="15" src="../assets/images/02NombreUsuario.png" width="185" /></td>
+								<img class="titulo_campo" height="15" src="../assets/images/02NombreUsuario.png" width="185" /></td>
 									</tr>
 									<tr>
 									<td>									
@@ -41,7 +42,7 @@
 									</tr>
 									<tr>
 									<td>
-								<img alt="" class="auto-style4" height="15" src="../assets/images/01Contrasena.png" width="112" /></td>
+								<img class="titulo_campo" height="15" src="../assets/images/01Contrasena.png" width="112" /></td>
 									</tr>
 									<tr>
 									<td>
@@ -49,7 +50,7 @@
 									</tr>
 									<tr>
 									<td>										
-								<img alt="" class="auto-style9" height="20" src="../assets/images/02NombreApellido.png" width="209" /></td>
+								<img class="titulo_campo" height="20" src="../assets/images/02NombreApellido.png" width="209" /></td>
 									</tr>
 									<tr>
 									<td>
@@ -57,7 +58,7 @@
 									</tr>
 									<tr>
 									<td>							
-								<img alt="" class="auto-style4" height="15" src="../assets/images/02Correo.png" width="66" /></td>
+								<img class="titulo_campo" height="15" src="../assets/images/02Correo.png" width="66" /></td>
 									</tr>
 									<tr>
 									<td>
@@ -68,24 +69,23 @@
 									<tr>
 									<td>
 								<button type="submit">								
-								<div id="img1" class="shadow" src="../assets/images/00Registrarse01.png"></div></button></td>
+								<div id="img1_01" class="shadow" src="../assets/images/00Registrarse01.png"></div></button></td>
 									</tr>
 									<tr>
-									<td></td>
 									</tr>
 									<tr>
 									<td>
 								<button onclick="/">
 								<router-link to="/">
-								<div id="img2" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
+								<div id="img2_01" class="shadow" src="../assets/images/00Cancelar01.png"></div></router-link></button></td>
 									</tr>
 									<tr>
 									<td>&nbsp;</td>
 									</tr>
 							</table>
+
 						</td>
-						<td class="auto-style1">
-						&nbsp;</td>
+						<td></td>
 						</tr>
 					</tbody>
 				</table>
@@ -94,6 +94,7 @@
   	</div>
 
 </template>
+
 
 <script>
 import gql from "graphql-tag";
@@ -112,7 +113,7 @@ export default {
         	},
     	};
     },
-
+ 
   methods: {
     processSignUp: async function() {
       await this.$apollo
@@ -149,36 +150,11 @@ export default {
 </script>
 
 <style>
-	.auto-style1 {
-		text-align: center;
-	}
-	.auto-style2 {
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	.auto-style3 {
-		margin-top: 10px;
-		margin-bottom: 3px;
-	}
-	.auto-style4 {
-		margin-top: 10px;
-		margin-bottom: 5px;
-	}
-	.auto-style5 {
-		margin-top: 10px;
-	}
-	.auto-style8 {
-		border-width: 0px;
-	}
-	.auto-style9 {
-		margin-top: 10px;
-		margin-bottom: 6px;
-	}
-	.auto-style10 {
+
+	.tabla_blanca {
 		border: 3px solid #808080;
 		background-color: #FFFFFF;
 	}
-
 
 	.signUp_user{
         margin: 0;
@@ -205,12 +181,10 @@ export default {
 
     .signUp_user h2{
         color: #283747;
-
     }
 
     .signUp_user form{
-        width: 70%;
-        
+        width: 70%;   
     }
 
     .signUp_user input{
@@ -234,8 +208,28 @@ export default {
         background: none;
     }
 
+	.titulo_campo {
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
 
-	#img1 {
+	#titulo_01 {
+		border-width: 0px;
+	}
+
+	#titulo_01a {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-width: 0px;
+	}
+
+	#titulo_01b {
+		margin-top: 10px;
+		margin-bottom: 6px;
+		border-width: 0px;
+	}
+
+	#img1_01 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -243,11 +237,11 @@ export default {
 		background-image:url("../assets/images/00Registrarse01.png");
 	}
 
-	#img1:hover {
+	#img1_01:hover {
 		background-image:url("../assets/images/00Registrarse02.png");
 	}
 
-	#img2 {
+	#img2_01 {
 		margin:0 auto;
 		width:207px;
 		height:60px;
@@ -255,7 +249,7 @@ export default {
 		background-image:url("../assets/images/00Cancelar01.png");
 	}
 
-	#img2:hover {
+	#img2_01:hover {
 		background-image:url("../assets/images/00Cancelar02.png");
 	}
 
