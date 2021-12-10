@@ -6,21 +6,22 @@ import com.registro.reg.models.Software;
 import com.registro.reg.models.Contabilidad;
 import com.registro.reg.repositories.RegisterRepository;
 import com.registro.reg.repositories.UsuarioRepository;
-
 import com.registro.reg.repositories.ContabilidadRepository;
+import com.registro.reg.repositories.SoftwareRepository;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+
 public class RegisterController {
 
     private final RegisterRepository registerRepository;
     private final UsuarioRepository usuarioRepository;
     private final ContabilidadRepository contabilidadRepository;
+    private final SoftwareRepository softwareRepository;
 
-    public RegisterController(RegisterRepository registerRepository,UsuarioRepository usuarioRepository,ContabilidadRepository contabilidadRepository) {
+    public RegisterController(RegisterRepository registerRepository,UsuarioRepository usuarioRepository,ContabilidadRepository contabilidadRepository,SoftwareRepository softwareRepository) {
         this.registerRepository = registerRepository;
         this.usuarioRepository = usuarioRepository;
-
+        this.softwareRepository = softwareRepository;
         this.contabilidadRepository = contabilidadRepository;
     }
 
@@ -48,13 +49,22 @@ public class RegisterController {
 
     @GetMapping("/contabilidad/{eqid}")
     Contabilidad getContabilidad(@PathVariable String eqid) {
-        return contabilidadRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro el equipo: "+ eqid));
+        return contabilidadRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro el equipo: " + eqid));
     }
 
     @PostMapping("/contabilidad")
     Contabilidad newContabilidad(@RequestBody Contabilidad eqid){
         return contabilidadRepository.save(eqid);
     }
+
+    @GetMapping("/software/{eqid}")
+    Software getSoftware (@PathVariable String eqid) {
+        return softwareRepository.findById(eqid).orElseThrow(() -> new EqidNotFoundException("No se encontro el equipo: " + eqid));
+    }
+
+    @PostMapping("/software")
+    Software newSoftware(@RequestBody Software eqid) {return softwareRepository.save(eqid);}
+
 
 
 

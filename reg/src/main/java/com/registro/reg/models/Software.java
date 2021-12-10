@@ -2,16 +2,15 @@ package com.registro.reg.models;
 
 import org.springframework.data.annotation.Id;
 
-import java.util.Date;
 
-public class Software {
+public class Software{
     @Id
-    private String Edition;
-    private Boolean Typesystem;
-    private String Manufantivirus;
-    private Boolean Licenantivirus;
-    private String LicOfic;
-    private String LibOfic;
+    private String edition;
+    private Boolean typesystem;
+    private String manufantivirus;
+    private Boolean licenantivirus;
+    private String licOfic;
+    private String libOfic;
     private String other1;
     private String licother1;
     private String other2;
@@ -21,13 +20,13 @@ public class Software {
     private String notes;
 
 
-    public Software (String Edition,Boolean Typesystem,String Manufantivirus,Boolean Licenantivirus,String LicOfic,String LibOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3, String notes ){
-        this.Edition =Edition;
-        this.Typesystem =Typesystem;
-        this.Manufantivirus=Manufantivirus;
-        this.Licenantivirus=Licenantivirus;
-        this.LicOfic=LicOfic;
-        this.LibOfic=LibOfic;
+    public Software (String edition,Boolean typesystem,String manufantivirus,Boolean licenantivirus,String licOfic,String libOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3, String notes ){
+        this.edition =edition;
+        this.typesystem =typesystem;
+        this.manufantivirus=manufantivirus;
+        this.licenantivirus=licenantivirus;
+        this.licOfic=licOfic;
+        this.libOfic=libOfic;
         this.other1=other1;
         this.licother1=licother1;
         this.other2=other2;
@@ -40,47 +39,48 @@ public class Software {
     }
 
     public String getEdition() {
-        return Edition;
+        return edition;
     }
 
-    public void setEdition(String Edition) {
-        this.Edition = Edition;
+    public void setEdition(String edition) {
+        this.edition = edition;
     }
 
-    public boolean getTypesystem() {
-        return Typesystem;
+    public Boolean getTypesystem() {
+        return typesystem;
     }
 
-    public void setTypesystem(boolean Typesystem) {this.Typesystem =Typesystem;}
+    public void setTypesystem(Boolean typesystem) {this.typesystem =typesystem;}
 
     public String getManufantivirus() {
-        return Manufantivirus;
+        return manufantivirus;
     }
 
-    public void setManufantivirus(String Manufantivirus) {
-        this.Manufantivirus = Manufantivirus;
+    public void setManufantivirus(String manufantivirus) {
+        this.manufantivirus = manufantivirus;
     }
 
-    public boolean getLicenantivirus() {
-        return Licenantivirus;
+    public Boolean getLicenantivirus() {
+        return licenantivirus;
     }
 
-    public void setLicenantivirus(boolean Licenantivirus ) {this.Licenantivirus=Licenantivirus;}
+    public void setLicenantivirus(Boolean licenantivirus ) {
+        this.licenantivirus=licenantivirus;}
 
     public String getLicOfic() {
-        return LicOfic;
+        return licOfic;
     }
 
-    public void setLicOfic(String LicOfic) {
-        this.LicOfic = LicOfic;
+    public void setLicOfic(String licOfic) {
+        this.licOfic = licOfic;
     }
 
     public String getLibOfic() {
-        return LibOfic;
+        return libOfic;
     }
 
-    public void setLibOfic(String LibOfic) {
-        this.LibOfic = LibOfic;
+    public void setLibOfic(String libOfic) {
+        this.libOfic = libOfic;
     }
 
     public String getother1() {
@@ -138,7 +138,6 @@ public class Software {
     public void setNotes(String notes) {
         this.notes = notes;
     }
-
 
 }
 

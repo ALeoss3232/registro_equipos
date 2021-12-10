@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 public class Contabilidad {
-
+    @Id
     private String eqid;
     private String invoice;
     private String dateinvoice;
@@ -15,7 +15,7 @@ public class Contabilidad {
     private String shopplace;
     private String warranty;
 
-    public Contabilidad ( String eqid, String invoice, String dateinvoice, String pricenet, String iva, String shopplace, String warranty ) {
+    public Contabilidad ( String eqid, String invoice, String dateinvoice, String pricenet, String iva, String shopplace, String warranty) {
         this.eqid = eqid;
         this.invoice = invoice;
         this.dateinvoice = dateinvoice;
