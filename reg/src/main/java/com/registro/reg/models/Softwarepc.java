@@ -2,15 +2,15 @@ package com.registro.reg.models;
 
 import org.springframework.data.annotation.Id;
 
-
-public class Software{
+public class Softwarepc{
     @Id
+    private String eqid;
     private String edition;
     private Boolean typesystem;
     private String manufantivirus;
     private Boolean licenantivirus;
-    private String licOfic;
-    private String libOfic;
+    private String licofic;
+    private String libofic;
     private String other1;
     private String licother1;
     private String other2;
@@ -20,13 +20,14 @@ public class Software{
     private String notes;
 
 
-    public Software (String edition,Boolean typesystem,String manufantivirus,Boolean licenantivirus,String licOfic,String libOfic,String other1, String licother1,String other2, String licother2,String other3, String licother3, String notes ){
+    public Softwarepc (String eqid,String edition,Boolean typesystem,String manufantivirus,Boolean licenantivirus,String licofic,String libofic,String other1, String licother1,String other2, String licother2,String other3, String licother3, String notes ){
+        this.eqid = eqid;
         this.edition =edition;
         this.typesystem =typesystem;
         this.manufantivirus=manufantivirus;
         this.licenantivirus=licenantivirus;
-        this.licOfic=licOfic;
-        this.libOfic=libOfic;
+        this.licofic=licofic;
+        this.libofic=libofic;
         this.other1=other1;
         this.licother1=licother1;
         this.other2=other2;
@@ -34,9 +35,14 @@ public class Software{
         this.other3=other3;
         this.licother3=licother3;
         this.notes=notes;
-
-
     }
+        public String getEqid() {return eqid;}
+
+        public void setEqid(String eqid) {
+            this.eqid = eqid;
+        }
+
+
 
     public String getEdition() {
         return edition;
@@ -64,23 +70,22 @@ public class Software{
         return licenantivirus;
     }
 
-    public void setLicenantivirus(Boolean licenantivirus ) {
-        this.licenantivirus=licenantivirus;}
+    public void setLicenantivirus(Boolean licenantivirus )  {this.licenantivirus=licenantivirus;}
 
-    public String getLicOfic() {
-        return licOfic;
+    public String getLicofic() {
+        return licofic;
     }
 
-    public void setLicOfic(String licOfic) {
-        this.licOfic = licOfic;
+    public void setLicofic(String licOfic) {
+        this.licofic = licOfic;
     }
 
-    public String getLibOfic() {
-        return libOfic;
+    public String getLibofic() {
+        return libofic;
     }
 
-    public void setLibOfic(String libOfic) {
-        this.libOfic = libOfic;
+    public void setLibofic(String libOfic) {
+        this.libofic = libOfic;
     }
 
     public String getother1() {
@@ -140,6 +145,7 @@ public class Software{
     }
 
 }
+
 
 
 
